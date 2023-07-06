@@ -4,6 +4,6 @@ let counter =document.getElementById('wordCount');
 
   text.addEventListener('input',()=>{
      let textlength= text.value;
-	  let count= textlength.replace(" ","").length;
+	  let count= textlength.replace(/\s/g, "").length;
 	  counter.textContent = count;
   })
