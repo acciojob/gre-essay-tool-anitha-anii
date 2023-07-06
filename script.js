@@ -1,9 +1,9 @@
 //your code here
-let text =document.getElementById('evaluatedText');
-let counter =document.getElementById('wordCount');
+let text = document.getElementById('evaluatedText');
+let counter = document.getElementById('wordCount');
 
-  text.addEventListener('input',()=>{
-     let textlength= text.value;
-	  let count= textlength.replace(/\s/g, "").length;
-	  counter.textContent = count;
-  })
+text.addEventListener('input', () => {
+  let textLength = text.value;
+  let count = textLength.split(" ").length;
+  counter.textContent = count;
+});
